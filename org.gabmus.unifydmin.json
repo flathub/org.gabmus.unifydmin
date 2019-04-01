@@ -413,8 +413,8 @@
             "sources": [{
                 "type": "git",
                 "url": "https://gitlab.com/gabmus/unifydmin.git",
-                "tag": "0.1",
-                "commit": "7fadb04b97dd1a0623c35929f8da32344f3ffdff"
+                "tag": "0.1.1",
+                "commit": "665d81ec265e0492fd2ef94929e2e4b7f0524b71"
             }]
         }
     ]
