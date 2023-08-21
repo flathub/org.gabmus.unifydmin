@@ -28,8 +28,8 @@
           "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libdazzle/3.34/libdazzle-3.34.1.tar.xz",
-                    "sha256": "3d981cbb9d9bb87bfaff7bfd44d9847223b3ef81e69225e4d1f6ac725a669505"
+                    "url": "https://download.gnome.org/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz",
+                    "sha256": "3cd3e45eb6e2680cb05d52e1e80dd8f9d59d4765212f0e28f78e6c1783d18eae"
                 }
             ]
         },
@@ -39,7 +39,7 @@
             "config-opts": ["--buildtype=release", "-Dvapi=false"],
             "sources": [{
                 "type": "archive",
-                "url": "https://source.puri.sm/Librem5/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz",
+                "url": "https://gitlab.gnome.org/GNOME/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz",
                 "sha256": "138bec94e66d15a7a19350b65845d4529bcd969ea913ab3eb438f56fe47d5d37"
             }]
         },
