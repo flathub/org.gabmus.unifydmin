@@ -12,7 +12,6 @@
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--talk-name=org.freedesktop.Flatpak",
         "--filesystem=~/.ssh:ro"
     ],
     "cleanup": ["/include", "/share/gtk-doc", "/share/vala"],
