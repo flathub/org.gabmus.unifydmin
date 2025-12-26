@@ -406,12 +406,18 @@
             "name": "unifydmin",
             "buildsystem": "meson",
             "config-opts": ["--buildtype=release"],
-            "sources": [{
-                "type": "git",
-                "url": "https://gitlab.com/gabmus/unifydmin.git",
-                "tag": "0.1.1",
-                "commit": "665d81ec265e0492fd2ef94929e2e4b7f0524b71"
-            }]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.com/gabmus/unifydmin.git",
+                    "tag": "0.1.1",
+                    "commit": "665d81ec265e0492fd2ef94929e2e4b7f0524b71"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
+                }
+            ]
         }
     ]
 }
