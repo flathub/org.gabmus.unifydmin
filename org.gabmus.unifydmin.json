@@ -7,15 +7,11 @@
     "finish-args": [
         "--share=ipc",
         "--share=network",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--talk-name=org.gnome.SettingsDaemon",
         "--talk-name=org.freedesktop.Flatpak",
-        "--filesystem=~/.ssh:ro",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--filesystem=~/.ssh:ro"
     ],
     "cleanup": ["/include", "/share/gtk-doc", "/share/vala"],
     "modules": [
@@ -410,12 +406,18 @@
             "name": "unifydmin",
             "buildsystem": "meson",
             "config-opts": ["--buildtype=release"],
-            "sources": [{
-                "type": "git",
-                "url": "https://gitlab.com/gabmus/unifydmin.git",
-                "tag": "0.1.1",
-                "commit": "665d81ec265e0492fd2ef94929e2e4b7f0524b71"
-            }]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.com/gabmus/unifydmin.git",
+                    "tag": "0.1.1",
+                    "commit": "665d81ec265e0492fd2ef94929e2e4b7f0524b71"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
+                }
+            ]
         }
     ]
 }
